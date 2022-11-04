@@ -49,10 +49,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final List<Transaction> transactions = [
-    Transaction(id: 5, title: "loló", value: 12.30, date: DateTime.now()),
-    Transaction(id: 6, title: "loló", value: 12.30, date: DateTime.now())
-  ];
+  final List<Transaction> transactions = [];
 
   List<Transaction> get lastTransactions {
     return transactions.where((e) {
